@@ -1,0 +1,187 @@
+
+body {
+    margin: 0;
+    font-family: Helvetica;
+    background: #FFFFFF;
+    color: #000000;
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+}
+
+body > h1 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
+    text-overflow: ellipsis;
+    color: #FFFFFF;
+    background: url(../images/iPhoneToolbar.png) #6d84a2 repeat-x;
+    border-bottom: 1px solid #2d3642;
+}
+
+.button {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    -webkit-border-image: url(../images/iPhoneButton.png) 0 5 0 5;
+    -webkit-border-radius: 0;
+    border-width: 0 5px 0 5px;
+    padding: 0;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
+    text-decoration: none;
+    background: none;
+}
+
+#WebdevButton, #BookmarkletsButton, #InformationButton, #OutlineButton, #ToolsButton, #ValidatorsButton {
+    display: none;
+    left: 6px;
+    right: auto;
+    -webkit-border-image: url(../images/iPhoneBackButton.png) 0 8 0 14;
+    border-width: 0 8px 0 14px;
+}
+
+.goButton {
+    -webkit-border-image: url(../images/iPhoneGoButton.png) 0 5 0 5;
+    border-width: 0 5px;
+}
+
+body > div,
+body > form,
+body > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    width: 100%;
+    min-height: 418px;
+    margin: 0;
+    padding: 0;
+}
+
+body > *[selected="true"] {
+    display: block;
+}
+
+body > ul > li {
+    margin: 0;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 0;
+    background: url(../images/iPhoneArrow.png) no-repeat right center;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+
+body > ul > li > a {
+    display: block;
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    color: inherit;
+}
+    
+.panel {
+    box-sizing: border-box;
+    margin: 0px;
+	padding:0px;
+    background: #c8c8c8 url(../images/pinstripes.png);
+}
+
+.panel div {
+	padding:10px;
+}
+
+/************************************************************************************************/
+
+.logo {
+	margin-top:15px;
+	background:url(http://www.manifestinteractive.com/images/logo.gif) center center no-repeat #FFF;
+	border-width: 1px;
+	border-style:solid ;
+	border-color:rgb(217,217,217);
+	-webkit-border-radius: 8px;
+	width:175px;
+	height:50px;
+	display:block;
+	padding:5px;
+}
+
+ul.menu 
+{	   
+	padding: 0;	   
+	margin-top:0;
+	margin-bottom:17px;		  /* Set each list 17 pixels from the top of the button bar(or the top of the next list) */
+	
+	font-size:17px;
+	font-family: Helvetica;
+	font-weight:bold;
+	color:black;
+	
+	background-color: white;       /* Each list has a white background fill */
+	
+	border-width: 1px;		       /* Draw a rectangle around each list */
+	border-style:solid ;
+	border-color:rgb(217,217,217);
+	
+	-webkit-border-radius: 8px;		 /* Round each corner of the created rectangle */
+}
+
+
+ul.menu > li
+{	
+	list-style-type: none;	
+	
+	border-top-width:1px;	/* Create lines between cells. Each line is placed above each item */
+	border-top-style:solid;
+	border-top-color:rgb(217,217,217);
+
+	padding-top:10px;		  
+	padding-right:10px;		 
+	padding-bottom:14px;	 /* Indent the cell content 14 pixels from the bottom edge of a cell */
+	padding-left:10px;	
+	
+	background: url(../images/iPhoneArrow.png) no-repeat right center;
+	display: block;
+}
+
+ul.menu > li:first-child 
+{
+	border-top:0;    /* Remove border above the first item of the list */
+}
+ul.menu > li > a  /* Handle the click/tap highlight. Highlight an entire cell with the iPhone grey background when tapped */ 
+{
+	display: block;   /* Sets the href to be a block rather than inline */
+	
+	/* The padding properties adjust the text content within the href block */
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 12px;
+	padding-left: 8px;
+	
+	/* The margin properties adjust the size of the href block	*/
+	margin-top: -8px;
+	margin-right: -8px;
+	margin-bottom: -12px;
+	margin-left: -8px;	 
+	
+	text-decoration: none;
+	color:black;
+}
+ul.menu > li > span
+{
+	font-weight:normal;		/* Regular font is used for secondary text */
+	float:right;		     /* Align secondary text to the right of its parent cell */
+	margin-right:28px;
+	margin-top:-15px;
+	display: inline;
+	color:#787878;
+	font-size:12px;	 
+}
